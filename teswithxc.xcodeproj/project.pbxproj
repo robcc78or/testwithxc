@@ -21,6 +21,7 @@
 		60FAB8D5193E62BF00D8C43D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAB8B7193E62BE00D8C43D /* UIKit.framework */; };
 		60FAB8DD193E62BF00D8C43D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60FAB8DB193E62BF00D8C43D /* InfoPlist.strings */; };
 		60FAB8DF193E62BF00D8C43D /* teswithxcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAB8DE193E62BF00D8C43D /* teswithxcTests.m */; };
+		60FAB8E9193E638400D8C43D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAB8E8193E638400D8C43D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		60FAB8DA193E62BF00D8C43D /* teswithxcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "teswithxcTests-Info.plist"; sourceTree = "<group>"; };
 		60FAB8DC193E62BF00D8C43D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60FAB8DE193E62BF00D8C43D /* teswithxcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = teswithxcTests.m; sourceTree = "<group>"; };
+		60FAB8E8193E638400D8C43D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			files = (
 				60FAB8B6193E62BE00D8C43D /* CoreGraphics.framework in Frameworks */,
 				60FAB8B8193E62BE00D8C43D /* UIKit.framework in Frameworks */,
+				60FAB8E9193E638400D8C43D /* MapKit.framework in Frameworks */,
 				60FAB8B4193E62BE00D8C43D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		60FAB8B2193E62BE00D8C43D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60FAB8E8193E638400D8C43D /* MapKit.framework */,
 				60FAB8B3193E62BE00D8C43D /* Foundation.framework */,
 				60FAB8B5193E62BE00D8C43D /* CoreGraphics.framework */,
 				60FAB8B7193E62BE00D8C43D /* UIKit.framework */,
@@ -199,6 +203,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Roberto Casu";
 				TargetAttributes = {
+					60FAB8AF193E62BE00D8C43D = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					60FAB8D0193E62BF00D8C43D = {
 						TestTargetID = 60FAB8AF193E62BE00D8C43D;
 					};

@@ -17,7 +17,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    double latitude=39.898706;
+    double longitude=8.592098;
+    
+    CLLocationCoordinate2D coord =CLLocationCoordinate2DMake(latitude, longitude);
+    MKCoordinateSpan span =MKCoordinateSpanMake(.0100, .0100);
+    MKCoordinateRegion region = MKCoordinateRegionMake(coord,span);
+    [self.map setZoomEnabled:YES];
+    [self.map setShowsUserLocation:YES];
+    [self.map setMapType:MKMapTypeStandard];
+    [self.map setScrollEnabled:YES];
+    [self.map setRegion:region animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning
